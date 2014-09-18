@@ -1,6 +1,8 @@
 #Comp102 Learning and Teaching Materials
 
-{Insert big ascii-art banner/icon/logo/funny}
+- [x] Insert big ascii-art banner/icon/logo/funny
+- [ ] Insert big list of links to resources
+- [ ] Include lesson outlines
 
 We are going to cover a lot of ground in this course!
 
