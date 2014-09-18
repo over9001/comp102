@@ -1,6 +1,8 @@
 #Comp102 Learning and Teaching Materials
 
-<h1> Welcome! </h1>
+<div class="jumbotron">
+  <h1>Welcome!</h1>
+</div>
 
 - [x] Insert big ascii-art banner/icon/logo/funny
 - [ ] Insert big list of links to resources
