@@ -117,3 +117,8 @@ YYKWZGNM4/Pb  '-VscP4]b@W%     'Mf`   -L\///KM(%W!
 
 
 ```
+
+Some notes:
+Everyone will be getting themselves a gmail and github account if they don't have one already.
+
+All our python work will be done in virtual environments, to keep things clean and avoid problems. http://docs.python-guide.org/en/latest/dev/virtualenvs/
