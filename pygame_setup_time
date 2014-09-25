@@ -1,0 +1,42 @@
+#Some setup first
+#http://www.pygame.org/wiki/CompileUbuntu
+#http://askubuntu.com/questions/344512/what-is-the-general-procedure-to-install-development-libraries-in-ubuntu
+#http://askubuntu.com/questions/432542/is-ffmpeg-missing-from-the-official-repositories-in-14-04
+# Include source repositories under source control, then
+# sudo apt-get build-dep python-pygame
+# sudo apt-get install python-dev
+# more packages to install:
+# libavformat-dv libavformat54 libswscale-dev libswscale2 python-dev python3-dev
+# http://www.python-forum.org/viewtopic.php?f=25&t=2716
+# interesting https://github.com/metulburr/distro_setup
+# resource http://programarcadegames.com/index.php?chapter=example_code_platformer
+# http://www.pygame.org/docs/
+
+# ball.gif and code from http://www.pygame.org/docs/tut/intro/intro.html
+
+import sys, pygame
+pygame.init()
+
+size = width, height = 320, 240
+speed = [2, 2]
+black = 0, 0, 0
+
+screen = pygame.display.set_mode(size)
+
+ball = pygame.image.load("ball.gif")
+ballrect = ball.get_rect()
+
+while 1:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT: sys.exit()
+
+    ballrect = ballrect.move(speed)
+
+    if ballrect.left < 0 or ballrect.right > width:
+            speed[0] = -speed[0]
+    if ballrect.top < 0 or ballrect.bottom > height:
+            speed[1] = -speed[1]
+
+    screen.fill(black)
+    screen.blit(ball, ballrect)
+    pygame.display.flip()
