@@ -122,3 +122,9 @@ Everyone will be getting themselves a gmail and github account if they don't hav
 All our python work will be done in virtual environments, to keep things clean and avoid problems. http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
 Optional: To make these lessons truly portable, development work can be done on a Linux Mint 17 live USB. Crunchbang for extra points.
+
+RESOURCES:
+Google.com Seriously.
+stackoverflow
+wikipedia
+the docs! Find the docs!
