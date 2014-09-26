@@ -1,0 +1,32 @@
+# enable source packages in Software Sources
+
+# add ppa for ffmpeg to keep scripts from complaining
+sudo apt-add-repository ppa:jon-severinsson/ffmpeg
+
+# add google chrome sources
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list && chmod 644 /etc/apt/sources.list.d/google-chrome.list'
+
+sudo apt-get update
+
+sudo apt-get install sublime-text libsublime-dev libsublime7 tree sl git mercurial python-pip python3-pip fortune python-dev python-numpy libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libsdl1.2-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev htop build-essential xorg-dev libudev-dev libts-dev libgl1-mesa-dev libglu1-mesa-dev libasound2-dev libpulse-dev libopenal-dev libogg-dev libvorbis-dev libaudiofile-dev libpng12-dev libfreetype6-dev libusb-dev libdbus-1-dev zlib1g-dev libdirectfb-dev libav-tools libavformat-dev libavformat54 libswscale-dev libswscale2 python3-dev libsmpeg-dev python3-numpy subversion libportmidi-dev libfreetype6-dev ffmpeg google-chrome-stable
+
+# install SDL for pygame
+hg clone http://hg.libsdl.org/SDL
+cd SDL
+./configure
+make
+sudo make install
+sudo ldconfig
+
+# Some more installation
+sudo apt-get build-dep python-pygame
+
+# Compile pygame for python3
+# Grab source
+hg clone https://bitbucket.org/pygame/pygame
+ 
+# Finally build and install
+cd pygame
+python3 setup.py build
+sudo python3 setup.py install
