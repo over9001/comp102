@@ -4,13 +4,11 @@
 
 - [x] Insert big ascii-art banner/icon/logo/funny
 - [ ] Insert big list of links to resources
-- [ ] Include lesson outlines
+- [x] Include lesson outlines
 
 We are going to cover a lot of ground in this course!
 
 These course materials are designed to be current as of September 2014
-
-To make these lessons truly portable, development work will be done on a Linux Mint 17 live USB.
 
 This file is written in Github flavoured markdown: https://help.github.com/articles/github-flavored-markdown 
 
@@ -122,3 +120,5 @@ Some notes:
 Everyone will be getting themselves a gmail and github account if they don't have one already.
 
 All our python work will be done in virtual environments, to keep things clean and avoid problems. http://docs.python-guide.org/en/latest/dev/virtualenvs/
+
+Optional: To make these lessons truly portable, development work can be done on a Linux Mint 17 live USB. Crunchbang for extra points.
