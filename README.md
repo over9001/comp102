@@ -128,3 +128,7 @@ Google.com Seriously.
 stackoverflow
 wikipedia
 the docs! Find the docs!
+
+Getting used to CLI http://linuxcommand.org/
+Advanced Bash Scripting http://tldp.org/LDP/abs/html/index.html
+
