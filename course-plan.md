@@ -23,7 +23,10 @@
 
 	Digging into CLI tools and using CLI tools for video gaming.
 
+	http://community.linuxmint.com/tutorial/view/100
+	
 	Getting up and running with git and github.
+	GIT-IT! From nodeschool.io
 
 	HOMEWORK: More codecademy. Homework will be tailored to the student. 
 
